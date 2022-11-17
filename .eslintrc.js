@@ -155,6 +155,7 @@ module.exports = {
     "jsx-ally/href-no-hash": "off",
     "jsx-a11y/mouse-events-have-key-events": "off",
     "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
 
     "react/destructuring-assignment": "off",
     "react/forbid-prop-types": "off",

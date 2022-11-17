@@ -1,0 +1,12 @@
+.wrap {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap li{
+  line-height: 48px;
+  font-size: 30px;
+}

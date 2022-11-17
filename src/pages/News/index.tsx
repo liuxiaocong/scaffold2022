@@ -4,7 +4,7 @@ import s from './s.module.css';
 import { get, post } from 'utils/request';
 import { FETCH_NEWS, POST_NEWS } from 'constants/api';
 
-const Page = () => {
+const Page = ():React.ReactElement => {
     React.useEffect(() => {
         get({
             url: FETCH_NEWS,
