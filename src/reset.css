@@ -1,0 +1,147 @@
+:root {
+  --primary-color: #9248ee;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  background: #000;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: PingFangSC-Regular, PingFang SC, Helvetica Neue,
+    Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  color: #9248ee !important;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article>*+* {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.ant-message-notice-content {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: all 5000s ease-in-out 0s;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+a,
+a:hover,
+a:active {
+  color: #9248ee;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.slide-enter,
+.slide-exit {
+  transition: opacity 200ms ease-out, transform 200ms ease-in-out;
+  transform-origin: center;
+}
+
+.slide-enter {
+  opacity: 0;
+  /* transform: scale(0.95); */
+}
+
+.slide-enter.slide-enter-active {
+  opacity: 1;
+  /* transform: scale(1); */
+}
+
+.slide-exit {
+  opacity: 0;
+  /* transform: scale(0.95); */
+}
+
+.slide-exit-active {
+  opacity: 1;
+  /* transform: scale(1); */
+}

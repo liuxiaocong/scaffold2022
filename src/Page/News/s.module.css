@@ -1,0 +1,12 @@
+.wrap h2 {
+  margin: 30px;
+  color: #333;
+  text-align: center;
+  font-size: 22px;
+}
+
+.content {
+  width: 80%;
+  max-width: 800px;
+  margin: 30px auto;
+}
