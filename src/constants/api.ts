@@ -1,4 +1,4 @@
-export const API_HOST = "http://localhost:7001";
+export const API_HOST = 'http://localhost:7001';
 
 export const FETCH_NEWS = `${API_HOST}/news`;
 

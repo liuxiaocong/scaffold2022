@@ -1,9 +1,8 @@
 import React from 'react';
 import s from './s.module.css';
 
-import { Input, Checkbox } from 'antd';
-import { get, post } from 'common/utils/request';
-import { FETCH_NEWS, POST_NEWS } from 'common/constants/api';
+import { get, post } from 'utils/request';
+import { FETCH_NEWS, POST_NEWS } from 'constants/api';
 
 const Page = () => {
     React.useEffect(() => {
