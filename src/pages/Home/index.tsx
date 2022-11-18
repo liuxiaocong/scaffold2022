@@ -2,6 +2,7 @@ import React from 'react';
 import { PATH } from 'constants/path';
 import { useNavigate } from 'react-router-dom';
 import s from './s.module.css';
+import sless from './sless.module.less';
 
 const Page = (): React.ReactElement => {
     const navigate = useNavigate();
@@ -11,6 +12,7 @@ const Page = (): React.ReactElement => {
                 Object.keys(PATH).map((key) => {
                     return (
                         <li
+                            className={sless.item}
                             key={key}
                             onClick={() => {
                                 navigate(PATH[key]);

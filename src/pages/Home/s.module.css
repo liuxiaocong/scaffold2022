@@ -9,4 +9,10 @@
 .wrap li{
   line-height: 48px;
   font-size: 30px;
+  cursor: pointer;
+}
+
+.wrap li:hover{
+  text-decoration: underline;
+  color: #000;
 }

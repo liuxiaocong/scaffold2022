@@ -117,7 +117,6 @@ module.exports = {
       },
       {
         selector: "objectLiteralProperty",
-        // See https://git.garena.com/shopee/isfe/DSFE/style-guides/-/blob/master/packages/eslint-config-infra-typescript/naming.js
         format: null,
       },
       {
