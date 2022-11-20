@@ -3,8 +3,11 @@ import s from './s.module.css';
 
 import { get, post } from 'utils/request';
 import { FETCH_NEWS, POST_NEWS } from 'constants/api';
+import UserStore from 'store/User';
 
 const Page = ():React.ReactElement => {
+    const [getUser] = UserStore.useStore();
+    const user = getUser('data');
     React.useEffect(() => {
         get({
             url: FETCH_NEWS,
@@ -24,6 +27,11 @@ const Page = ():React.ReactElement => {
 
     return (
         <div className={s.wrap}>
+            <div style={{ textAlign: 'center' }}>
+                <h3>User</h3>
+                <p>Name: {user?.name}</p>
+                <p>Age: {user?.age}</p>
+            </div>
             <h2>News</h2>
             <div className={s.content}>
                 <p>Content</p>

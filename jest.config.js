@@ -16,5 +16,5 @@ module.exports = {
         '^pages/(.*)': '<rootDir>/src/pages/$1',
         '^constants/(.*)': '<rootDir>/src/constants/$1',
     },
-    modulePathIgnorePatterns: ['<rootDir>/src/utils/demo'],
+    modulePathIgnorePatterns: ['<rootDir>/src/utils/__test'],
 }

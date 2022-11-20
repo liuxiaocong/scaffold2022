@@ -24,10 +24,24 @@ module.exports = {
         rules: [
             /* ... */
             {
-                test: /\.tsx?$/,
-                use: 'ts-loader',
+                test: /\.ts$/,
+                loader: 'esbuild-loader',
                 exclude: /node_modules/,
                 include: [path.resolve(__dirname, 'src')],
+                options: {
+                    loader: 'ts',
+                    target: 'es2015',
+                },
+            },
+            {
+                test: /\.tsx$/,
+                loader: 'esbuild-loader',
+                exclude: /node_modules/,
+                include: [path.resolve(__dirname, 'src')],
+                options: {
+                    loader: 'tsx',
+                    target: 'es2015',
+                },
             },
             {
                 test: /\.css$/i,
