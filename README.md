@@ -3,10 +3,6 @@
 This scaffold is using for init FE project in ``, created by [`yeoman`](https://yeoman.io/)
 
 
-#### Install and start
-
-- yarn add -g yo
-
 #### Tech lib
 - React@18
 - Antd@4
@@ -25,3 +21,6 @@ This scaffold is using for init FE project in ``, created by [`yeoman`](https://
 - Eslint
 - husky (pending)
 
+#### Test
+
+- jest, focus on unit test and little snap test

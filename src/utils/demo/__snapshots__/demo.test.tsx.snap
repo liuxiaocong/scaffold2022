@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<header
+  className="ant-layout-header header"
+>
+  <div
+    className="logo"
+  />
+  <ul
+    className="ant-menu-overflow ant-menu ant-menu-root ant-menu-horizontal ant-menu-dark"
+    data-menu-list={true}
+    onKeyDown={[Function]}
+    role="menu"
+    tabIndex={0}
+  >
+    <li
+      className="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child"
+      data-menu-id={null}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      role="menuitem"
+      style={
+        {
+          "height": undefined,
+          "opacity": 1,
+          "order": 0,
+          "overflowY": undefined,
+          "pointerEvents": undefined,
+          "position": undefined,
+        }
+      }
+      tabIndex={-1}
+    >
+      <span
+        className="ant-menu-title-content"
+      >
+        nav 1
+      </span>
+    </li>
+    <li
+      className="ant-menu-overflow-item ant-menu-item ant-menu-item-selected ant-menu-item-only-child"
+      data-menu-id={null}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      role="menuitem"
+      style={
+        {
+          "height": undefined,
+          "opacity": 1,
+          "order": 1,
+          "overflowY": undefined,
+          "pointerEvents": undefined,
+          "position": undefined,
+        }
+      }
+      tabIndex={-1}
+    >
+      <span
+        className="ant-menu-title-content"
+      >
+        nav 2
+      </span>
+    </li>
+    <li
+      className="ant-menu-overflow-item ant-menu-item ant-menu-item-only-child"
+      data-menu-id={null}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      role="menuitem"
+      style={
+        {
+          "height": undefined,
+          "opacity": 1,
+          "order": 2,
+          "overflowY": undefined,
+          "pointerEvents": undefined,
+          "position": undefined,
+        }
+      }
+      tabIndex={-1}
+    >
+      <span
+        className="ant-menu-title-content"
+      >
+        nav 3
+      </span>
+    </li>
+    <li
+      aria-hidden={true}
+      className="ant-menu-overflow-item ant-menu-overflow-item-rest ant-menu-submenu ant-menu-submenu-horizontal"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      role="none"
+      style={
+        {
+          "height": 0,
+          "opacity": 0,
+          "order": 9007199254740991,
+          "overflowY": "hidden",
+          "pointerEvents": "none",
+          "position": "absolute",
+        }
+      }
+    >
+      <div
+        aria-controls={null}
+        aria-expanded={false}
+        aria-haspopup={true}
+        className="ant-menu-submenu-title"
+        data-menu-id={null}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        role="menuitem"
+        style={null}
+        tabIndex={-1}
+        title={null}
+      >
+        <span
+          aria-label="ellipsis"
+          className="anticon anticon-ellipsis"
+          role="img"
+        >
+          <svg
+            aria-hidden="true"
+            data-icon="ellipsis"
+            fill="currentColor"
+            focusable="false"
+            height="1em"
+            viewBox="64 64 896 896"
+            width="1em"
+          >
+            <path
+              d="M176 511a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0zm280 0a56 56 0 10112 0 56 56 0 10-112 0z"
+            />
+          </svg>
+        </span>
+        <i
+          className="ant-menu-submenu-arrow"
+        />
+      </div>
+    </li>
+  </ul>
+  <div
+    aria-hidden={true}
+    style={
+      {
+        "display": "none",
+      }
+    }
+  />
+</header>
+`;
