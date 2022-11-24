@@ -14,7 +14,10 @@ module.exports = {
     "coverage",
     "public",
     "scripts",
-    "dist"
+    "dist",
+    "svgTransform.js",
+    "styleMock.js",
+    "src/lib"
   ],
   plugins: ["@typescript-eslint", "import", "jsx-a11y", "react", "react-hooks"],
   parserOptions: {

@@ -83,7 +83,11 @@ export const get = async <Req, Res>(
         return await parseJSON(response);
     } catch (err) {
         const error = err as Error;
-        errorHandle ? errorHandle(error) : handleError(error);
+        if (errorHandle) {
+            errorHandle(error);
+        } else {
+            handleError(error);
+        }
         return { success: false, error: error?.message };
     }
 };
@@ -109,7 +113,11 @@ export const post = async <Req, Res>(
         return await parseJSON(response);
     } catch (err) {
         const error = err as Error;
-        errorHandle ? errorHandle(error) : handleError(error);
+        if (errorHandle) {
+            errorHandle(error);
+        } else {
+            handleError(error);
+        }
         return { success: false, error: error?.message };
     }
 };

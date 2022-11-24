@@ -1,4 +1,4 @@
-import TinyStore from '../tinyStore';
+import TinyStore from 'lib/tinyStore';
 
 type User = {
     name: string;

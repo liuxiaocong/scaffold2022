@@ -1,8 +1,8 @@
 import React from 'react';
 import { PATH } from 'constants/path';
-import Template from 'pages/Template';
-import Home from 'pages/Home';
-import New from 'pages/News';
+import Template from 'pages/TemplatePage';
+import Home from 'pages/HomePage';
+import New from 'pages/NewsPage';
 import { RouteObject } from 'react-router-dom';
 
 const ROUTERS: RouteObject[] = [

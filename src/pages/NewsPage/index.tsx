@@ -29,8 +29,8 @@ const Page = ():React.ReactElement => {
         <div className={s.wrap}>
             <div style={{ textAlign: 'center' }}>
                 <h3>User</h3>
-                <p>Name: {user?.name}</p>
-                <p>Age: {user?.age}</p>
+                <p>Name: {user?.name || 'Not set'}</p>
+                <p>Age: {user?.age || 'Not set'}</p>
             </div>
             <h2>News</h2>
             <div className={s.content}>
