@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import s from './s.module.css';
 import sless from './sless.module.less';
 import UserStore from 'store/User';
+import HeaderIcon from './images/header.png';
+import SvgIcon from './images/apple.svg';
 
 const Page = (): React.ReactElement => {
     const navigate = useNavigate();
@@ -15,23 +17,28 @@ const Page = (): React.ReactElement => {
         });
     }, []);
     return (
-        <ul className={s.wrap}>
-            {
-                Object.keys(PATH).map((key) => {
-                    return (
-                        <li
-                            className={sless.item}
-                            key={key}
-                            onClick={() => {
-                                navigate(PATH[key]);
-                            }}
-                        >
-                            {key}
-                        </li>
-                    );
-                })
-            }
-        </ul>
+        <>
+            <img src={SvgIcon} alt="icon" className={s.img} />
+            <img src={HeaderIcon} alt="icon" className={s.img} />
+            <ul className={s.wrap}>
+                <li />
+                {
+                    Object.keys(PATH).map((key) => {
+                        return (
+                            <li
+                                className={sless.item}
+                                key={key}
+                                onClick={() => {
+                                    navigate(PATH[key]);
+                                }}
+                            >
+                                {key}
+                            </li>
+                        );
+                    })
+                }
+            </ul>
+        </>
     );
 };
 

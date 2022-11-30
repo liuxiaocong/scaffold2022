@@ -3,8 +3,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const path = require('path')
 
+const cssModuleRegex = /\.module\.css$/
+
 module.exports = function (webpackEnv) {
-    const isEnvProduction = webpackEnv === 'production'
+    const isEnvProduction = !!webpackEnv?.production
     return {
         entry: './src/index.tsx',
         output: {
@@ -35,6 +37,14 @@ module.exports = function (webpackEnv) {
             rules: [
                 /* ... */
                 {
+                    test: /\.(png|jpe?g|svg|gif)$/i,
+                    use: [
+                        {
+                            loader: 'file-loader',
+                        },
+                    ],
+                },
+                {
                     test: /\.ts$/,
                     loader: 'esbuild-loader',
                     exclude: /node_modules/,
@@ -56,6 +66,20 @@ module.exports = function (webpackEnv) {
                 },
                 {
                     test: /\.css$/i,
+                    exclude: cssModuleRegex,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                importLoaders: 1,
+                                modules: false,
+                            },
+                        },
+                        'postcss-loader'],
+                },
+                {
+                    test: cssModuleRegex,
                     use: [
                         MiniCssExtractPlugin.loader,
                         {
