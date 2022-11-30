@@ -1,0 +1,11 @@
+body {
+  background: #000 !important;
+}
+
+html {
+  color: red !important;
+}
+
+.reset {
+  color: #f00;
+}
